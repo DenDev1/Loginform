@@ -1,0 +1,86 @@
+*{
+    margin: 12;
+    padding: 1px;;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.contactform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:  column;
+    height: 500px;
+    border-radius: 51px;
+    background-color: aliceblue #ababab;
+    box-shadow: 23px 23px 40px #ab9999,-23px -23px 40px #ffff;
+}
+.contentform{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 2px;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contentform h1{
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: 0.9s;
+}
+.contactform h1:hover{
+    font-size: 50px;
+    cursor: pointer;
+}
+.inputbox label{
+    margin-bottom: 5px 30px;
+    border: 5px solid rgb(253, 249, 249);
+    outline: none;
+    transition: 0.7s;
+    border-radius: 25px;
+    background: transparent;
+}
+.inputbox input{
+    margin-bottom: 5px 30px;
+    border: 1px solid rgb(3, 3, 3);
+    outline: none;
+    transition: 0.7s;
+    border-radius: 25px;
+    background: transparent;
+
+ }
+.inputbox input:focus,
+.inputbox input:valid{
+    color: #ffff;
+    box-shadow: inset 300px 0 rgb(20, 20, 20);
+}
+.contactform button{
+    position: absolute;
+    bottom : 80px;
+    padding: 5px 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(14, 13, 13);
+    background-color: transparent;
+    transition: 0.7s;   
+}
+.contactform button:hover{
+        transform: scale(100%);
+        background-color: black;
+        color: #ffff;
+        cursor: pointer;
+        letter-spacing: 2px;
+}
